@@ -23,20 +23,20 @@
                                     <segue destination="zIw-4Q-rpd" kind="showDetail" id="HMB-yb-n6Z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAE-CT-4Rw">
-                                <rect key="frame" x="147" y="232" width="81" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Show Detail"/>
-                                <connections>
-                                    <segue destination="Sew-5k-fBC" kind="show" id="Bi6-q7-jFg"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q77-5G-QRZ">
                                 <rect key="frame" x="103" y="318" width="169" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Screen with Back Button"/>
                                 <connections>
                                     <segue destination="rXZ-XW-RCn" kind="show" id="CRP-6S-PXC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAE-CT-4Rw">
+                                <rect key="frame" x="147" y="232" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show Detail"/>
+                                <connections>
+                                    <segue destination="Sew-5k-fBC" kind="show" id="Bi6-q7-jFg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -121,14 +121,26 @@
         <!--Show Detail-->
         <scene sceneID="emd-Uf-DEu">
             <objects>
-                <viewController id="Sew-5k-fBC" sceneMemberID="viewController">
+                <viewController id="Sew-5k-fBC" customClass="FirstViewController" customModule="NavigationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="efI-xv-XUV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVF-7p-rLP">
+                                <rect key="frame" x="83" y="130" width="208" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Open FirstTableViewController"/>
+                                <connections>
+                                    <segue destination="4Zs-SC-V24" kind="show" id="fdk-dX-bj4"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="IPy-CH-KPx"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Show Detail" largeTitleDisplayMode="never" id="pIL-jS-pro"/>
+                    <navigationItem key="navigationItem" title="Show Detail" largeTitleDisplayMode="never" id="pIL-jS-pro">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="bIK-Ys-jI5"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lql-1W-UMz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -149,6 +161,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L8x-UX-RBq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-781" y="122"/>
+        </scene>
+        <!--First TableViewController-->
+        <scene sceneID="ySm-vb-NN2">
+            <objects>
+                <tableViewController id="4Zs-SC-V24" customClass="FirstTableViewController" customModule="NavigationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="iur-fO-2bx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="simpleCell" textLabel="0ed-XZ-jbZ" detailTextLabel="Qct-dW-Awu" style="IBUITableViewCellStyleSubtitle" id="jqU-Pi-Nrr">
+                                <rect key="frame" x="0.0" y="28" width="375" height="55.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jqU-Pi-Nrr" id="LaZ-s4-Lsn">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0ed-XZ-jbZ">
+                                            <rect key="frame" x="16" y="10" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qct-dW-Awu">
+                                            <rect key="frame" x="16" y="31.5" width="33" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="4Zs-SC-V24" id="CzU-hg-T3p"/>
+                            <outlet property="delegate" destination="4Zs-SC-V24" id="1un-4W-vIL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="First TableViewController" largeTitleDisplayMode="never" id="dhd-sG-qBG"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Geh-i6-V54" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3465" y="-358"/>
         </scene>
     </scenes>
 </document>
