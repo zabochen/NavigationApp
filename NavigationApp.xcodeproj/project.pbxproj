@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7611E4CF248D0FA7000D66F9 /* CustomViewControllerWithCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7611E4CE248D0FA7000D66F9 /* CustomViewControllerWithCustomCell.swift */; };
+		7611E4D3248D1823000D66F9 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7611E4D2248D1823000D66F9 /* CustomCell.swift */; };
+		7611E4D6248D1E2F000D66F9 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7611E4D5248D1E2F000D66F9 /* CustomCell.xib */; };
 		7612DFB12479A6AA00F1F247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7612DFB02479A6AA00F1F247 /* AppDelegate.swift */; };
 		7612DFB32479A6AA00F1F247 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7612DFB22479A6AA00F1F247 /* SceneDelegate.swift */; };
 		7612DFB52479A6AA00F1F247 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7612DFB42479A6AA00F1F247 /* MainViewController.swift */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7611E4CE248D0FA7000D66F9 /* CustomViewControllerWithCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewControllerWithCustomCell.swift; sourceTree = "<group>"; };
+		7611E4D2248D1823000D66F9 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		7611E4D5248D1E2F000D66F9 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		7612DFAD2479A6AA00F1F247 /* NavigationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7612DFB02479A6AA00F1F247 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7612DFB22479A6AA00F1F247 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7611E4CD248D0F59000D66F9 /* WithCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				7611E4D2248D1823000D66F9 /* CustomCell.swift */,
+				7611E4D5248D1E2F000D66F9 /* CustomCell.xib */,
+				7611E4CE248D0FA7000D66F9 /* CustomViewControllerWithCustomCell.swift */,
+			);
+			path = WithCustomCell;
+			sourceTree = "<group>";
+		};
 		7612DFA42479A6AA00F1F247 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +107,7 @@
 		76BC7945247AE6A200CD081E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				7611E4CD248D0F59000D66F9 /* WithCustomCell */,
 				7612DFB42479A6AA00F1F247 /* MainViewController.swift */,
 				76BC7943247AE4E600CD081E /* ModallViewController.swift */,
 				766B6CB5248A38CC00911ED8 /* FirstViewController.swift */,
@@ -161,6 +178,7 @@
 			files = (
 				7612DFBD2479A6AC00F1F247 /* LaunchScreen.storyboard in Resources */,
 				7612DFBA2479A6AC00F1F247 /* Assets.xcassets in Resources */,
+				7611E4D6248D1E2F000D66F9 /* CustomCell.xib in Resources */,
 				7612DFB82479A6AA00F1F247 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,8 +194,10 @@
 				7615BA3E2482E1E800895A86 /* BaseTableViewController.swift in Sources */,
 				76BC7944247AE4E600CD081E /* ModallViewController.swift in Sources */,
 				7612DFB12479A6AA00F1F247 /* AppDelegate.swift in Sources */,
+				7611E4D3248D1823000D66F9 /* CustomCell.swift in Sources */,
 				766B6CBB248A528300911ED8 /* UserModel.swift in Sources */,
 				76BC7947247AF90000CD081E /* SecondViewController.swift in Sources */,
+				7611E4CF248D0FA7000D66F9 /* CustomViewControllerWithCustomCell.swift in Sources */,
 				7612DFB32479A6AA00F1F247 /* SceneDelegate.swift in Sources */,
 				76157281248A8C8500465183 /* CustomTableViewController.swift in Sources */,
 				766B6CB6248A38CC00911ED8 /* FirstViewController.swift in Sources */,

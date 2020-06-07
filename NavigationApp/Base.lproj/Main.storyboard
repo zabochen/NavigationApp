@@ -142,6 +142,14 @@
                                     <segue destination="p1d-aX-yHI" kind="show" id="IUE-J5-GR1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmm-4y-2Hb">
+                                <rect key="frame" x="25" y="270" width="324" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Open CustomTableViewController - CustomCell"/>
+                                <connections>
+                                    <segue destination="o60-oH-0dO" kind="show" id="7Ns-YY-qIp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="IPy-CH-KPx"/>
@@ -216,6 +224,37 @@
             </objects>
             <point key="canvasLocation" x="3521" y="-794"/>
         </scene>
+        <!--CustomTableView with CustomCell-->
+        <scene sceneID="eTJ-Ib-VNl">
+            <objects>
+                <viewController id="o60-oH-0dO" customClass="CustomViewControllerWithCustomCell" customModule="NavigationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SqI-iP-FVI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5VU-tB-hBG">
+                                <rect key="frame" x="0.0" y="96" width="375" height="415"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9YB-Vd-Cgo" firstAttribute="bottom" secondItem="5VU-tB-hBG" secondAttribute="bottom" constant="156" id="5GS-Qx-hJk"/>
+                            <constraint firstItem="5VU-tB-hBG" firstAttribute="top" secondItem="9YB-Vd-Cgo" secondAttribute="top" constant="52" id="Bcu-Es-8CV"/>
+                            <constraint firstItem="9YB-Vd-Cgo" firstAttribute="trailing" secondItem="5VU-tB-hBG" secondAttribute="trailing" id="MVm-81-a8t"/>
+                            <constraint firstItem="5VU-tB-hBG" firstAttribute="leading" secondItem="9YB-Vd-Cgo" secondAttribute="leading" id="gtK-4S-SJI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9YB-Vd-Cgo"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CustomTableView with CustomCell" id="4j5-Po-Fud"/>
+                    <connections>
+                        <outlet property="tableView" destination="5VU-tB-hBG" id="2O6-8V-9p2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T7q-Yn-3iP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3520.8000000000002" y="137.18140929535232"/>
+        </scene>
         <!--CustomTableViewController-->
         <scene sceneID="7Ze-C7-AXH">
             <objects>
@@ -273,7 +312,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgh-ut-9x0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3520.8000000000002" y="65.217391304347828"/>
+            <point key="canvasLocation" x="4495" y="-358"/>
         </scene>
     </scenes>
 </document>
