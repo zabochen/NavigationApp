@@ -12,12 +12,11 @@ class CustomViewControllerWithCustomCell: UIViewController, UITableViewDelegate,
     
     @IBOutlet weak var tableView: UITableView!
     
-    private let IDENTIFIER_CELL_NAME = "customCell"
     private var userList: [UserModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Fill userList
         for i in 1...100 {
             self.userList.append(UserModel(name: "User_\(i)", age: 10 + i))
@@ -27,9 +26,11 @@ class CustomViewControllerWithCustomCell: UIViewController, UITableViewDelegate,
         tableView.delegate = self
         tableView.dataSource = self
         
-        // 1. Create/Register Nib + add our/custom identifier
-        let tableNib = UINib(nibName: "CustomCell", bundle: nil)
-        tableView.register(tableNib, forCellReuseIdentifier: IDENTIFIER_CELL_NAME)
+        // 1. Create/Register Nib - use extension
+        // CustomCell.self.baseCellNib()
+        // CustomCell.self.baceCellIdentifier()
+        // .Self -> .Type
+        tableView.registerCustomCell(baseCell: CustomCell.self)
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,7 +41,7 @@ class CustomViewControllerWithCustomCell: UIViewController, UITableViewDelegate,
         
         // 2. Create custom cell
         let cell = tableView.dequeueReusableCell(
-            withIdentifier: IDENTIFIER_CELL_NAME,
+            withIdentifier: CustomCell.cellIdentifier(),
             for: indexPath) as! CustomCell
         
         // 3. Config custom cell

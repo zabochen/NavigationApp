@@ -10,6 +10,8 @@
 		7611E4CF248D0FA7000D66F9 /* CustomViewControllerWithCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7611E4CE248D0FA7000D66F9 /* CustomViewControllerWithCustomCell.swift */; };
 		7611E4D3248D1823000D66F9 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7611E4D2248D1823000D66F9 /* CustomCell.swift */; };
 		7611E4D6248D1E2F000D66F9 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7611E4D5248D1E2F000D66F9 /* CustomCell.xib */; };
+		7611E4D9248D3D44000D66F9 /* UiExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7611E4D8248D3D44000D66F9 /* UiExtensions.swift */; };
+		7611E4DB248D5895000D66F9 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7611E4DA248D5895000D66F9 /* BaseCell.swift */; };
 		7612DFB12479A6AA00F1F247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7612DFB02479A6AA00F1F247 /* AppDelegate.swift */; };
 		7612DFB32479A6AA00F1F247 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7612DFB22479A6AA00F1F247 /* SceneDelegate.swift */; };
 		7612DFB52479A6AA00F1F247 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7612DFB42479A6AA00F1F247 /* MainViewController.swift */; };
@@ -28,6 +30,8 @@
 		7611E4CE248D0FA7000D66F9 /* CustomViewControllerWithCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewControllerWithCustomCell.swift; sourceTree = "<group>"; };
 		7611E4D2248D1823000D66F9 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		7611E4D5248D1E2F000D66F9 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		7611E4D8248D3D44000D66F9 /* UiExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiExtensions.swift; sourceTree = "<group>"; };
+		7611E4DA248D5895000D66F9 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 		7612DFAD2479A6AA00F1F247 /* NavigationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7612DFB02479A6AA00F1F247 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7612DFB22479A6AA00F1F247 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,8 +65,17 @@
 				7611E4D2248D1823000D66F9 /* CustomCell.swift */,
 				7611E4D5248D1E2F000D66F9 /* CustomCell.xib */,
 				7611E4CE248D0FA7000D66F9 /* CustomViewControllerWithCustomCell.swift */,
+				7611E4DA248D5895000D66F9 /* BaseCell.swift */,
 			);
 			path = WithCustomCell;
+			sourceTree = "<group>";
+		};
+		7611E4D7248D3CFE000D66F9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7611E4D8248D3D44000D66F9 /* UiExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		7612DFA42479A6AA00F1F247 = {
@@ -107,6 +120,7 @@
 		76BC7945247AE6A200CD081E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				7611E4D7248D3CFE000D66F9 /* Extensions */,
 				7611E4CD248D0F59000D66F9 /* WithCustomCell */,
 				7612DFB42479A6AA00F1F247 /* MainViewController.swift */,
 				76BC7943247AE4E600CD081E /* ModallViewController.swift */,
@@ -195,12 +209,14 @@
 				76BC7944247AE4E600CD081E /* ModallViewController.swift in Sources */,
 				7612DFB12479A6AA00F1F247 /* AppDelegate.swift in Sources */,
 				7611E4D3248D1823000D66F9 /* CustomCell.swift in Sources */,
+				7611E4DB248D5895000D66F9 /* BaseCell.swift in Sources */,
 				766B6CBB248A528300911ED8 /* UserModel.swift in Sources */,
 				76BC7947247AF90000CD081E /* SecondViewController.swift in Sources */,
 				7611E4CF248D0FA7000D66F9 /* CustomViewControllerWithCustomCell.swift in Sources */,
 				7612DFB32479A6AA00F1F247 /* SceneDelegate.swift in Sources */,
 				76157281248A8C8500465183 /* CustomTableViewController.swift in Sources */,
 				766B6CB6248A38CC00911ED8 /* FirstViewController.swift in Sources */,
+				7611E4D9248D3D44000D66F9 /* UiExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
