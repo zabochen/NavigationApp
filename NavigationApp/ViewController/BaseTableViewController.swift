@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstTableViewController: UITableViewController {
+class BaseTableViewController: UITableViewController {
 
     private var userList: [UserModel] = []
     
@@ -36,7 +36,7 @@ class FirstTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "simpleCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "baseCell", for: indexPath)
     
         let user = userList[indexPath.row]
         cell.textLabel?.text = user.name

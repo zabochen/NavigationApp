@@ -13,7 +13,8 @@
 		7612DFB82479A6AA00F1F247 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7612DFB62479A6AA00F1F247 /* Main.storyboard */; };
 		7612DFBA2479A6AC00F1F247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7612DFB92479A6AC00F1F247 /* Assets.xcassets */; };
 		7612DFBD2479A6AC00F1F247 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7612DFBB2479A6AC00F1F247 /* LaunchScreen.storyboard */; };
-		7615BA3E2482E1E800895A86 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7615BA3D2482E1E800895A86 /* FirstTableViewController.swift */; };
+		76157281248A8C8500465183 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157280248A8C8500465183 /* CustomTableViewController.swift */; };
+		7615BA3E2482E1E800895A86 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7615BA3D2482E1E800895A86 /* BaseTableViewController.swift */; };
 		766B6CB6248A38CC00911ED8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B6CB5248A38CC00911ED8 /* FirstViewController.swift */; };
 		766B6CBB248A528300911ED8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B6CBA248A528300911ED8 /* UserModel.swift */; };
 		76BC7944247AE4E600CD081E /* ModallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC7943247AE4E600CD081E /* ModallViewController.swift */; };
@@ -29,7 +30,8 @@
 		7612DFB92479A6AC00F1F247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7612DFBC2479A6AC00F1F247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7612DFBE2479A6AC00F1F247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7615BA3D2482E1E800895A86 /* FirstTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
+		76157280248A8C8500465183 /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
+		7615BA3D2482E1E800895A86 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		766B6CB5248A38CC00911ED8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		766B6CBA248A528300911ED8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		76BC7943247AE4E600CD081E /* ModallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModallViewController.swift; sourceTree = "<group>"; };
@@ -93,7 +95,8 @@
 				76BC7943247AE4E600CD081E /* ModallViewController.swift */,
 				766B6CB5248A38CC00911ED8 /* FirstViewController.swift */,
 				76BC7946247AF90000CD081E /* SecondViewController.swift */,
-				7615BA3D2482E1E800895A86 /* FirstTableViewController.swift */,
+				7615BA3D2482E1E800895A86 /* BaseTableViewController.swift */,
+				76157280248A8C8500465183 /* CustomTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -170,12 +173,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7612DFB52479A6AA00F1F247 /* MainViewController.swift in Sources */,
-				7615BA3E2482E1E800895A86 /* FirstTableViewController.swift in Sources */,
+				7615BA3E2482E1E800895A86 /* BaseTableViewController.swift in Sources */,
 				76BC7944247AE4E600CD081E /* ModallViewController.swift in Sources */,
 				7612DFB12479A6AA00F1F247 /* AppDelegate.swift in Sources */,
 				766B6CBB248A528300911ED8 /* UserModel.swift in Sources */,
 				76BC7947247AF90000CD081E /* SecondViewController.swift in Sources */,
 				7612DFB32479A6AA00F1F247 /* SceneDelegate.swift in Sources */,
+				76157281248A8C8500465183 /* CustomTableViewController.swift in Sources */,
 				766B6CB6248A38CC00911ED8 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
