@@ -249,6 +249,7 @@
                     <navigationItem key="navigationItem" title="CustomTableView with CustomCell" id="4j5-Po-Fud"/>
                     <connections>
                         <outlet property="tableView" destination="5VU-tB-hBG" id="2O6-8V-9p2"/>
+                        <segue destination="3wP-GN-8Nv" kind="show" identifier="customDetailsIdentifier" id="iB2-la-G7b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T7q-Yn-3iP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -313,6 +314,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgh-ut-9x0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4495" y="-358"/>
+        </scene>
+        <!--Custom Details View Controller-->
+        <scene sceneID="Mxf-vw-2Vq">
+            <objects>
+                <viewController id="3wP-GN-8Nv" customClass="CustomDetailsViewController" customModule="NavigationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xzt-Vb-dr5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDB-xK-d8X">
+                                <rect key="frame" x="142" y="81" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uu2-yX-rJ3">
+                                <rect key="frame" x="149" y="152" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uu2-yX-rJ3" firstAttribute="top" secondItem="CDB-xK-d8X" secondAttribute="bottom" constant="50" id="7r5-6l-53z"/>
+                            <constraint firstItem="BTZ-Rq-WNL" firstAttribute="trailing" secondItem="CDB-xK-d8X" secondAttribute="trailing" constant="142" id="9QZ-Xb-qI2"/>
+                            <constraint firstItem="uu2-yX-rJ3" firstAttribute="leading" secondItem="BTZ-Rq-WNL" secondAttribute="leading" constant="149" id="UB3-Aj-wYq"/>
+                            <constraint firstItem="BTZ-Rq-WNL" firstAttribute="trailing" secondItem="uu2-yX-rJ3" secondAttribute="trailing" constant="150" id="YiY-DL-QPF"/>
+                            <constraint firstItem="CDB-xK-d8X" firstAttribute="leading" secondItem="BTZ-Rq-WNL" secondAttribute="leading" constant="142" id="a5e-hW-U7i"/>
+                            <constraint firstItem="CDB-xK-d8X" firstAttribute="top" secondItem="BTZ-Rq-WNL" secondAttribute="top" constant="37" id="p7K-DG-tdv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BTZ-Rq-WNL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cjc-mk-TLF"/>
+                    <connections>
+                        <outlet property="userAge" destination="uu2-yX-rJ3" id="XE7-4I-Oed"/>
+                        <outlet property="userName" destination="CDB-xK-d8X" id="AwM-Bj-zDb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cW2-OI-1LU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5599" y="137"/>
         </scene>
     </scenes>
 </document>

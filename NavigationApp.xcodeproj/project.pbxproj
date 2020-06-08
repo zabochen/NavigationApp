@@ -24,6 +24,7 @@
 		766B6CBB248A528300911ED8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B6CBA248A528300911ED8 /* UserModel.swift */; };
 		76BC7944247AE4E600CD081E /* ModallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC7943247AE4E600CD081E /* ModallViewController.swift */; };
 		76BC7947247AF90000CD081E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC7946247AF90000CD081E /* SecondViewController.swift */; };
+		76CA2EDF248E2A330062C427 /* CustomDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CA2EDE248E2A330062C427 /* CustomDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		766B6CBA248A528300911ED8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		76BC7943247AE4E600CD081E /* ModallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModallViewController.swift; sourceTree = "<group>"; };
 		76BC7946247AF90000CD081E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		76CA2EDE248E2A330062C427 /* CustomDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomDetailsViewController.swift; path = NavigationApp/ViewController/CustomDetailsViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		7612DFAF2479A6AA00F1F247 /* NavigationApp */ = {
 			isa = PBXGroup;
 			children = (
+				7611E4D7248D3CFE000D66F9 /* Extensions */,
 				766B6CB7248A513400911ED8 /* Model */,
 				7612DFB02479A6AA00F1F247 /* AppDelegate.swift */,
 				7612DFB22479A6AA00F1F247 /* SceneDelegate.swift */,
@@ -120,14 +123,14 @@
 		76BC7945247AE6A200CD081E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7611E4D7248D3CFE000D66F9 /* Extensions */,
-				7611E4CD248D0F59000D66F9 /* WithCustomCell */,
+				7615BA3D2482E1E800895A86 /* BaseTableViewController.swift */,
+				76CA2EDE248E2A330062C427 /* CustomDetailsViewController.swift */,
+				76157280248A8C8500465183 /* CustomTableViewController.swift */,
+				766B6CB5248A38CC00911ED8 /* FirstViewController.swift */,
 				7612DFB42479A6AA00F1F247 /* MainViewController.swift */,
 				76BC7943247AE4E600CD081E /* ModallViewController.swift */,
-				766B6CB5248A38CC00911ED8 /* FirstViewController.swift */,
 				76BC7946247AF90000CD081E /* SecondViewController.swift */,
-				7615BA3D2482E1E800895A86 /* BaseTableViewController.swift */,
-				76157280248A8C8500465183 /* CustomTableViewController.swift */,
+				7611E4CD248D0F59000D66F9 /* WithCustomCell */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				7615BA3E2482E1E800895A86 /* BaseTableViewController.swift in Sources */,
 				76BC7944247AE4E600CD081E /* ModallViewController.swift in Sources */,
 				7612DFB12479A6AA00F1F247 /* AppDelegate.swift in Sources */,
+				76CA2EDF248E2A330062C427 /* CustomDetailsViewController.swift in Sources */,
 				7611E4D3248D1823000D66F9 /* CustomCell.swift in Sources */,
 				7611E4DB248D5895000D66F9 /* BaseCell.swift in Sources */,
 				766B6CBB248A528300911ED8 /* UserModel.swift in Sources */,

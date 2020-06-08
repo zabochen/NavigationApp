@@ -1,11 +1,3 @@
-//
-//  CustomViewControllerWithCustomCell.swift
-//  NavigationApp
-//
-//  Created by Taras on 07.06.2020.
-//  Copyright © 2020 Taras. All rights reserved.
-//
-
 import UIKit
 
 class CustomViewControllerWithCustomCell: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -48,5 +40,30 @@ class CustomViewControllerWithCustomCell: UIViewController, UITableViewDelegate,
         cell.config(user: userList[indexPath.row])
         
         return cell
+    }
+    
+    // Selected table item & perform segue
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Current User
+        let user = userList[indexPath.row]
+        
+        // Deselected item
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        // Perform segue
+        performSegue(withIdentifier: "customDetailsIdentifier", sender: user)
+    }
+    
+    // Navigation to Next Screen
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // Navigate to CustomDetailsScreen
+        if segue.identifier == "customDetailsIdentifier",
+            let userModel = sender as? UserModel {
+            
+            // Find viewController
+            let customDetailViewController = segue.destination as! CustomDetailsViewController
+            customDetailViewController.user = userModel
+        }
     }
 }
