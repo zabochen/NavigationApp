@@ -1,12 +1,10 @@
 import UIKit
 
-class CustomViewControllerWithCustomCell: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CustomViewControllerWithCustomCell: UIViewController,
+    UITableViewDelegate, UITableViewDataSource,
+    CustomCellDelegate {
     
-    enum SomeEnum: String {
-        case someGoodValue = "someString"
-    }
-    
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
     
     private var userList: [UserModel] = []
     
@@ -42,7 +40,7 @@ class CustomViewControllerWithCustomCell: UIViewController, UITableViewDelegate,
             for: indexPath) as! CustomCell
 
         // 3. Config custom cell
-        cell.config(user: userList[indexPath.row])
+        cell.config(user: userList[indexPath.row], delegate: self)
         
         return cell
     }
@@ -54,15 +52,19 @@ class CustomViewControllerWithCustomCell: UIViewController, UITableViewDelegate,
     // Selected table item & perform segue
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Current User
-        let user = userList[indexPath.row]
+        //let user = userList[indexPath.row]
         
         // Deselected item
         tableView.deselectRow(at: indexPath, animated: true)
         
         // Perform segue
-        navigateToCustomDetailsScreen(with: user)
+        // navigateToCustomDetailsScreen(with: user)
     }
-        
+    
+    private func navigateToCustomDetailsScreen(with user: UserModel){
+        performSegue(withIdentifier: Constant.Segue.customDetailsId, sender: user)
+    }
+    
     // Navigation to Next Screen
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -75,8 +77,10 @@ class CustomViewControllerWithCustomCell: UIViewController, UITableViewDelegate,
             customDetailViewController.user = userModel
         }
     }
-    
-    private func navigateToCustomDetailsScreen(with user: UserModel){
-        performSegue(withIdentifier: Constant.Segue.customDetailsId, sender: user)
+        
+    // Callback from "Custom Cell"
+    func didPressButtonClickMeAction(cell: UITableViewCell) {
+        guard let row = tableView.indexPath(for: cell)?.row else { return }
+        navigateToCustomDetailsScreen(with: userList[row])
     }
 }

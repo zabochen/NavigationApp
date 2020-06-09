@@ -8,31 +8,46 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="103" id="fVb-0P-hLz" customClass="CustomCell" customModule="NavigationApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="103"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="172" id="fVb-0P-hLz" customClass="CustomCell" customModule="NavigationApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="485" height="172"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fVb-0P-hLz" id="qoZ-SV-Apw">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="103"/>
+                <rect key="frame" x="0.0" y="0.0" width="485" height="172"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARz-hG-mUu">
-                        <rect key="frame" x="163.5" y="41" width="87" height="21"/>
+                        <rect key="frame" x="163.5" y="41" width="158" height="90"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDp-DR-FQp">
+                        <rect key="frame" x="330" y="55" width="116" height="59"/>
+                        <color key="backgroundColor" red="0.92426764269999995" green="0.90280333509999999" blue="0.54160619440000002" alpha="0.98346720949999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="116" id="DhQ-VU-Q92"/>
+                            <constraint firstAttribute="height" constant="59" id="pGx-gu-ffZ"/>
+                        </constraints>
+                        <state key="normal" title="ClickMe"/>
+                        <connections>
+                            <action selector="actionClickButtonClickMe:" destination="fVb-0P-hLz" eventType="touchUpInside" id="p3p-7P-E9m"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="ARz-hG-mUu" secondAttribute="bottom" constant="41" id="0JK-08-PAT"/>
                     <constraint firstItem="ARz-hG-mUu" firstAttribute="leading" secondItem="qoZ-SV-Apw" secondAttribute="leading" constant="163.5" id="13O-Bg-ujX"/>
                     <constraint firstAttribute="trailing" secondItem="ARz-hG-mUu" secondAttribute="trailing" constant="163.5" id="T0V-aj-4M2"/>
+                    <constraint firstAttribute="bottom" secondItem="gDp-DR-FQp" secondAttribute="bottom" constant="58" id="ksP-mu-Fvc"/>
                     <constraint firstItem="ARz-hG-mUu" firstAttribute="top" secondItem="qoZ-SV-Apw" secondAttribute="top" constant="41" id="qBh-SW-hbW"/>
+                    <constraint firstItem="gDp-DR-FQp" firstAttribute="top" secondItem="qoZ-SV-Apw" secondAttribute="top" constant="55" id="uNY-C5-naq"/>
+                    <constraint firstAttribute="trailing" secondItem="gDp-DR-FQp" secondAttribute="trailing" constant="39" id="xcF-Jl-Sj9"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="labelName" destination="ARz-hG-mUu" id="G2s-yh-Hlv"/>
             </connections>
-            <point key="canvasLocation" x="-526.08695652173913" y="86.71875"/>
+            <point key="canvasLocation" x="-474.63768115942031" y="109.82142857142857"/>
         </tableViewCell>
     </objects>
 </document>

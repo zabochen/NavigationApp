@@ -2,8 +2,8 @@ import UIKit
 
 class CustomDetailsViewController: UIViewController {
     
-    @IBOutlet weak var userName: UILabel!
-    @IBOutlet weak var userAge: UILabel!
+    @IBOutlet private weak var userName: UILabel!
+    @IBOutlet private weak var userAge: UILabel!
     
     var user: UserModel!
     

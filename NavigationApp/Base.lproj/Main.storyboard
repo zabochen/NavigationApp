@@ -349,8 +349,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="cjc-mk-TLF"/>
                     <connections>
-                        <outlet property="userAge" destination="uu2-yX-rJ3" id="XE7-4I-Oed"/>
-                        <outlet property="userName" destination="CDB-xK-d8X" id="AwM-Bj-zDb"/>
+                        <outlet property="userAge" destination="uu2-yX-rJ3" id="Hje-wT-7N6"/>
+                        <outlet property="userName" destination="CDB-xK-d8X" id="bwE-f7-cyJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cW2-OI-1LU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
