@@ -6,6 +6,7 @@ class CustomDetailsViewController: UIViewController {
     @IBOutlet private weak var userAge: UILabel!
     
     var user: UserModel!
+    weak var delegate: CustomViewControllerWithCustomCellDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,5 +21,9 @@ class CustomDetailsViewController: UIViewController {
         // Age
         userAge.text = String(user.age)
         userAge.sizeToFit()
+    }
+    
+    @IBAction func actionClickButtonSendBackData(_ sender: UIButton) {
+        delegate?.sendSomeData(someText: "Text from CustomDetailsViewController")
     }
 }

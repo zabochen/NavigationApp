@@ -1,8 +1,12 @@
 import UIKit
 
+protocol CustomViewControllerWithCustomCellDelegate: AnyObject {
+    func sendSomeData(someText: String)
+}
+
 class CustomViewControllerWithCustomCell: UIViewController,
     UITableViewDelegate, UITableViewDataSource,
-    CustomCellDelegate {
+    CustomCellDelegate, CustomViewControllerWithCustomCellDelegate {
     
     @IBOutlet private weak var tableView: UITableView!
     
@@ -20,6 +24,10 @@ class CustomViewControllerWithCustomCell: UIViewController,
         initTableView()
     }
 
+    func sendSomeData(someText: String) {
+        // Callback from other ViewControllers
+    }
+    
     private func initTableView(){
         // Init TableView
         tableView.delegate = self
@@ -74,7 +82,9 @@ class CustomViewControllerWithCustomCell: UIViewController,
             
             // Find viewController
             let customDetailViewController = segue.destination as! CustomDetailsViewController
+            // Set UserData & Delegate
             customDetailViewController.user = userModel
+            customDetailViewController.delegate = self
         }
     }
         
