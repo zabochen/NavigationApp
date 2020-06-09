@@ -9,6 +9,6 @@
 import UIKit
 
 protocol BaseCell {
-    static func baseCellNib() -> UINib?
-    static func baceCellIdentifier() -> String
+    static func cellNib() -> UINib?
+    static func cellIdentifier() -> String
 }
