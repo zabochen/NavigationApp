@@ -11,6 +11,10 @@ class ConstraintViewController: UIViewController, UITextFieldDelegate {
         initTextField()
     }
  
+    
+    // MARK: - TextField: Init & UITextFieldDelegate -
+    
+    /// Init TextField
     private func initTextField(){
         firstTextField.isSecureTextEntry = true
         firstTextField.delegate = self

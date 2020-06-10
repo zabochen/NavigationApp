@@ -39,7 +39,20 @@ class MainViewController: UIViewController {
         // last destroy
     }
     
+    // MARK: - Actions
+    
+    /// Click Button
     @IBAction func actionClickButtonConstraintScreen(_ sender: UIButton) {
         performSegue(withIdentifier: Constant.Segue.constraintViewControllerId, sender: nil)
+    }
+    
+    
+    // MARK: - Comments
+    
+    /// Hello comment
+    /// - Parameter param1: some param1
+    /// - Parameter user: some user
+    private func helloComments(param1: Int, for user: String) -> String {
+        return "Hello user"
     }
 }
