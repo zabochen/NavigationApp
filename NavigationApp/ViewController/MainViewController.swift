@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  NavigationApp
-//
-//  Created by Taras on 23.05.2020.
-//  Copyright © 2020 Taras. All rights reserved.
-//
-
 import UIKit
 
 class MainViewController: UIViewController {
@@ -47,4 +39,7 @@ class MainViewController: UIViewController {
         // last destroy
     }
     
+    @IBAction func actionClickButtonConstraintScreen(_ sender: UIButton) {
+        performSegue(withIdentifier: Constant.Segue.constraintViewControllerId, sender: nil)
+    }
 }
