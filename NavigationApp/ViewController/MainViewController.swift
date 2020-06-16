@@ -41,11 +41,15 @@ class MainViewController: UIViewController {
     
     // MARK: - Actions
     
-    /// Click Button
+    // Action: Navigate to Constraint Screen
     @IBAction func actionClickButtonConstraintScreen(_ sender: UIButton) {
         performSegue(withIdentifier: Constant.Segue.constraintViewControllerId, sender: nil)
     }
     
+    // Action: Navigate to Block Screen
+    @IBAction func actionNavigateToBlockViewController(_ sender: UIButton) {
+        performSegue(withIdentifier: Constant.Segue.blockViewController, sender: nil)
+    }
     
     // MARK: - Comments
     

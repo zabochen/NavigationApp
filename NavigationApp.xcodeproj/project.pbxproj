@@ -23,6 +23,7 @@
 		7659F301248F896C0094543E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7659F300248F896C0094543E /* Constant.swift */; };
 		766B6CB6248A38CC00911ED8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B6CB5248A38CC00911ED8 /* FirstViewController.swift */; };
 		766B6CBB248A528300911ED8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B6CBA248A528300911ED8 /* UserModel.swift */; };
+		767E6C63249809CA008D8EC4 /* BlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767E6C62249809CA008D8EC4 /* BlockViewController.swift */; };
 		76BC7944247AE4E600CD081E /* ModallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC7943247AE4E600CD081E /* ModallViewController.swift */; };
 		76BC7947247AF90000CD081E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC7946247AF90000CD081E /* SecondViewController.swift */; };
 		76CA2EDF248E2A330062C427 /* CustomDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CA2EDE248E2A330062C427 /* CustomDetailsViewController.swift */; };
@@ -48,6 +49,7 @@
 		7659F300248F896C0094543E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		766B6CB5248A38CC00911ED8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		766B6CBA248A528300911ED8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		767E6C62249809CA008D8EC4 /* BlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockViewController.swift; sourceTree = "<group>"; };
 		76BC7943247AE4E600CD081E /* ModallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModallViewController.swift; sourceTree = "<group>"; };
 		76BC7946247AF90000CD081E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		76CA2EDE248E2A330062C427 /* CustomDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomDetailsViewController.swift; path = NavigationApp/ViewController/CustomDetailsViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				7615BA3D2482E1E800895A86 /* BaseTableViewController.swift */,
+				767E6C62249809CA008D8EC4 /* BlockViewController.swift */,
 				76CADF2B2490C2E200A6584E /* ConstraintViewController.swift */,
 				76CA2EDE248E2A330062C427 /* CustomDetailsViewController.swift */,
 				76157280248A8C8500465183 /* CustomTableViewController.swift */,
@@ -241,6 +244,7 @@
 				7611E4CF248D0FA7000D66F9 /* CustomViewControllerWithCustomCell.swift in Sources */,
 				7612DFB32479A6AA00F1F247 /* SceneDelegate.swift in Sources */,
 				76157281248A8C8500465183 /* CustomTableViewController.swift in Sources */,
+				767E6C63249809CA008D8EC4 /* BlockViewController.swift in Sources */,
 				766B6CB6248A38CC00911ED8 /* FirstViewController.swift in Sources */,
 				76CADF2C2490C2E200A6584E /* ConstraintViewController.swift in Sources */,
 				7611E4D9248D3D44000D66F9 /* UiExtensions.swift in Sources */,

@@ -47,6 +47,14 @@
                                     <action selector="actionClickButtonConstraintScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qRx-kg-Pti"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAz-4B-ZEV">
+                                <rect key="frame" x="97" y="171" width="180" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Open BlockViewController"/>
+                                <connections>
+                                    <action selector="actionNavigateToBlockViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AUe-re-NSI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -56,11 +64,12 @@
                     </navigationItem>
                     <connections>
                         <segue destination="zjQ-Ad-lDt" kind="show" identifier="navigateToConstraintViewController" id="U0M-FM-rSH"/>
+                        <segue destination="xov-uo-kus" kind="show" identifier="navigateToBlockViewController" id="g6t-ZQ-dLR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="567" y="122"/>
+            <point key="canvasLocation" x="686" y="-9"/>
         </scene>
         <!--Modall View Controller-->
         <scene sceneID="kXY-1F-Gpw">
@@ -206,6 +215,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQO-Ha-Xbx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2181.5999999999999" y="1487.4062968515743"/>
+        </scene>
+        <!--Block Screen-->
+        <scene sceneID="eeW-A9-C1x">
+            <objects>
+                <viewController id="xov-uo-kus" customClass="BlockViewController" customModule="NavigationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lVx-Rt-whQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytr-um-ahT">
+                                <rect key="frame" x="10" y="94" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ytr-um-ahT" firstAttribute="leading" secondItem="QXY-hU-mgZ" secondAttribute="leading" constant="10" id="2kB-Jk-Jas"/>
+                            <constraint firstItem="QXY-hU-mgZ" firstAttribute="trailing" secondItem="ytr-um-ahT" secondAttribute="trailing" constant="10" id="2xq-gv-bOC"/>
+                            <constraint firstItem="ytr-um-ahT" firstAttribute="top" secondItem="QXY-hU-mgZ" secondAttribute="top" constant="50" id="Fv3-KR-pJM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QXY-hU-mgZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Block Screen" largeTitleDisplayMode="never" id="dex-RH-lP6"/>
+                    <connections>
+                        <outlet property="userNameLabel" destination="ytr-um-ahT" id="pN6-uj-b5T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Qb-l9-WVK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2182" y="-1316"/>
         </scene>
         <!--Show Detail-->
         <scene sceneID="emd-Uf-DEu">
